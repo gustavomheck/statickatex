@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    <style>
+      .header {
+        width: 100%;
+        height: 45px;
+      }
+
+      .header td {
+        border: 1px solid lightgrey;
+      }
+
+      .header .header-img {
+        width: 50%;
+      }
+
+      .header .header-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+      }
+
+      .header .header-line {
+        text-transform: uppercase;
+        padding: 4px;
+        display: flex;
+        flex: 1 1 auto;
+      }
+
+      .header .header-line.center {
+        font-weight: bold;
+        justify-content: center;
+      }
+
+      .header .header-line span {
+        margin-left: 8px;
+        font-weight: bold;
+      }
+
+      .d-flex {
+        display: flex;
+        width: 100%;
+      }
+
+      body {
+        padding-top: 94px;
+        padding-right: 110px;
+        padding-left: 110px;
+        padding-bottom: 94px;
+      }
+
+      section {
+        margin-top: 24px;
+      }
+
+      section .question-label {
+        font-weight: bold;
+        border-bottom: 1px solid black;
+      }
+
+      section .question-text {
+        margin-top: 12px;
+      }
+
+      section .options-label {
+        margin-top: 24px;
+        color: grey;
+      }
+
+      section .option-letter {
+        z-index: 1;
+        position: relative;
+        right: 20px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .tituloReferencia {
+        text-align: center;
+        width: 100%;
+        margin-top: 8px;
+        font-weight: 600
+      }
+
+      .divReferencia {
+        word-break: break-word;
+        text-align: right;
+        width: 100%;
+        margin-left: 50%;
+        margin-top: 8px
+      }
+
+      .listaAlternativas {
+        list-style-type: none !important;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <table class="header">
+      <tr>
+        <td rowspan=2 class="header-img"><img src="https://dev-smartprova-v2.azurewebsites.net/assets/images/logo.png" /></td>
+        <td class="header-line center">TRIEDUC</td>
+      </tr>
+      <tr>
+        <td class="header-line">prova: <span>InstrumentoTeste</span></td>
+      </tr>
+    </table>
+    <p class="ql-align-justify">Correto. Como a circunferência é tangente às bases do trapézio, a altura do trapézio é igual ao diâmetro da circunferência, e como o trapézio é isósceles, tem-se que BD = AC = 5 cm. Traçando a altura do trapézio a partir do ponto D, tem-se o seguinte esquema.</p>
+    <p class="ql-align-justify"><img src="https://trieduc.blob.core.windows.net/smartprova/itens/7e1a922c-cfd8-4fa1-8cae-511328a5bca9/583310e4-e194-45cf-b37c-3c0d275b8471/6dd5e71c-c0a5-41bf-b1ab-7ab220523c5a.png"></p>
+    <p class="ql-align-justify"><br></p>
+    <p class="ql-align-justify">A altura é um dos catetos do triângulo retângulo. Aplicando o teorema de Pitágoras, tem-se h² = 5² - 3² → h = 4.</p>
+    <p class="ql-align-justify">Logo o raio da circunferência é 2 cm.</p>
+    <p class="ql-align-justify">A área da peça é dada por <span class="ql-formula" data-value="A_{peça}=A_{trapézio}-A_{circunferência}→A_{peça}=\frac{4+10}{2}⋅4-π⋅2²→A_{peça}=28-12=16 cm².">﻿<span contenteditable="false"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow>
+                        <mi>p</mi>
+                        <mi>e</mi>
+                        <mi>ç</mi>
+                        <mi>a</mi>
+                      </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow>
+                        <mi>t</mi>
+                        <mi>r</mi>
+                        <mi>a</mi>
+                        <mi>p</mi>
+                        <mover accent="true">
+                          <mi>e</mi>
+                          <mo>ˊ</mo>
+                        </mover>
+                        <mi>z</mi>
+                        <mi>i</mi>
+                        <mi>o</mi>
+                      </mrow>
+                    </msub>
+                    <mo>−</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow>
+                        <mi>c</mi>
+                        <mi>i</mi>
+                        <mi>r</mi>
+                        <mi>c</mi>
+                        <mi>u</mi>
+                        <mi>n</mi>
+                        <mi>f</mi>
+                        <mi>e</mi>
+                        <mi>r</mi>
+                        <mover accent="true">
+                          <mi>e</mi>
+                          <mo>^</mo>
+                        </mover>
+                        <mi>n</mi>
+                        <mi>c</mi>
+                        <mi>i</mi>
+                        <mi>a</mi>
+                      </mrow>
+                    </msub>
+                    <mo>→</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow>
+                        <mi>p</mi>
+                        <mi>e</mi>
+                        <mi>ç</mi>
+                        <mi>a</mi>
+                      </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                      <mrow>
+                        <mn>4</mn>
+                        <mo>+</mo>
+                        <mn>10</mn>
+                      </mrow>
+                      <mn>2</mn>
+                    </mfrac>
+                    <mo>⋅</mo>
+                    <mn>4</mn>
+                    <mo>−</mo>
+                    <mi>π</mi>
+                    <mo>⋅</mo>
+                    <mn>2</mn>
+                    <mtext>²</mtext>
+                    <mo>→</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mrow>
+                        <mi>p</mi>
+                        <mi>e</mi>
+                        <mi>ç</mi>
+                        <mi>a</mi>
+                      </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <mn>28</mn>
+                    <mo>−</mo>
+                    <mn>12</mn>
+                    <mo>=</mo>
+                    <mn>16</mn>
+                    <mtext> </mtext>
+                    <mi>c</mi>
+                    <mi>m</mi>
+                    <mtext>²</mtext>
+                    <mi mathvariant="normal">.</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">A_{peça}=A_{trapézio}-A_{circunferência}→A_{peça}=\frac{4+10}{2}⋅4-π⋅2²→A_{peça}=28-12=16 cm².</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">eç</span><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.336108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight" style="margin-right: 0.02778em;">r</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.69444em;"><span class="" style="top: -2.7em;"><span class="pstrut" style="height: 2.7em;"></span><span class="mord mathnormal mtight">e</span></span><span class="" style="top: -2.7em;"><span class="pstrut" style="height: 2.7em;"></span><span class="accent-body" style="left: -0.19444em;"><span class="mord mtight">ˊ</span></span></span></span></span></span></span><span class="mord mathnormal mtight" style="margin-right: 0.04398em;">z</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">o</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.336108em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">rc</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight" style="margin-right: 0.10764em;">f</span><span class="mord mathnormal mtight" style="margin-right: 0.02778em;">er</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.69444em;"><span class="" style="top: -2.7em;"><span class="pstrut" style="height: 2.7em;"></span><span class="mord mathnormal mtight">e</span></span><span class="" style="top: -2.7em;"><span class="pstrut" style="height: 2.7em;"></span><span class="accent-body" style="left: -0.19444em;"><span class="mord mtight">^</span></span></span></span></span></span></span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">ia</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">eç</span><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1.19011em; vertical-align: -0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.845108em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.394em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span><span class="mbin mtight">+</span><span class="mord mtight">10</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.345em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.44445em; vertical-align: 0em;"></span><span class="mord mathnormal" style="margin-right: 0.03588em;">π</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">2²</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.969438em; vertical-align: -0.286108em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.151392em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span><span class="mord mathnormal mtight">eç</span><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s"></span></span><span class="vlist-r"><span class="vlist" style="height: 0.286108em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">28</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">12</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">16 </span><span class="mord mathnormal">c</span><span class="mord mathnormal">m</span><span class="mord">².</span></span></span></span></span>﻿</span> <span class="ql-formula" data-value="A_{peça}=A_{trapézio}-A_{circunferência}→A_{peça}=4+102⋅4-π⋅2²→A_{peça}=28-12=16 cm².">﻿﻿</span></p>
+  </body>
+
+</html>
